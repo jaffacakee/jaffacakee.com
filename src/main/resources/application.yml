@@ -1,0 +1,21 @@
+mybatis:
+    mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: com.my.blog.website.dao
+pagehelper:
+    helperDialect: mysql
+    params: count=countSql
+    reasonable: true
+    support-methods-arguments: true
+server:
+    port: 8081
+spring:
+    profiles:
+        active: jdbc
+    thymeleaf:
+        cache: false
+        check-template-location: true
+        content-type: text/html
+        encoding: UTF-8
+        mode: HTML5
+        prefix: classpath:/templates/
+        suffix: .html
